@@ -1,0 +1,67 @@
+{
+  "id": "Common Header and Footer",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 1080
+    }
+  ],
+  "onReadyScript": "onReady.js",
+  "scenarios": [
+    {
+      "label": "Search",
+      "url": "%%URI%%",
+      "clickSelector": ".cd-search__btn"
+    },
+    {
+      "label": "OCHA Services",
+      "url": "%%URI%%",
+      "clickSelector": ".cd-ocha__btn"
+    },
+    {
+      "label": "Dropdown Menu",
+      "url": "%%URI%%",
+      "clickSelector": ".cd-site-header__nav .menu-item menu-item--expanded"
+    },
+    {
+      "label": "Mobile Menu",
+      "url": "%%URI%%",
+      "clickSelector": ".cd-nav__btn"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "data/anon/bitmaps_reference",
+    "bitmaps_test": "data/anon/bitmaps_test",
+    "engine_scripts": "library/engine_scripts",
+    "html_report": "data/anon/html_report",
+    "ci_report": "data/anon/ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "ignoreHTTPSErrors": true,
+    "args": [
+      "--no-sandbox",
+      "--disable-gpu",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "engineFlags": [],
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 10,
+  "debug": false,
+  "debugWindow": false,
+  "cliExitOnFail": true
+}

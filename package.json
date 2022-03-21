@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "backstopjs": "^5.4.4",
+    "dotenv": "^8.0.0"
+  },
+  "scripts": {
+    "reference-anon": "backstop reference --configPath=test_anonymous.js",
+    "reference-auth": "backstop reference --configPath=test_authenticated.js",
+    "reference-img": "backstop reference --configPath=test_img.js",
+    "reference-ui": "backstop reference --configPath=test_ui.js",
+    "test-anon": "backstop test --configPath=test_anonymous.js",
+    "test-auth": "backstop test --configPath=test_authenticated.js",
+    "test-img": "backstop test --configPath=test_img.js",
+    "test-ui": "backstop test --configPath=test_ui.js"
+  }
+}
