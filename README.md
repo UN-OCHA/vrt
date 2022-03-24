@@ -28,7 +28,7 @@ REF_URI=full URL for reference files
 TEST_URI=full URL for test files
 ```
 
-See [ocha_vrt/backstop_anon.json](https://github.com/UN-OCHA/ocha_vrt/blob/main/backstop_anon.json)
+See [tools-vrt/backstop_anon.json](https://github.com/UN-OCHA/tools-vrt/blob/main/backstop_anon.json)
 for default config.
 
 ## Testing click and hover behaviour
@@ -47,7 +47,7 @@ REF_URI=full URL for reference files
 TEST_URI=full URL for test files
 ```
 
-See [ocha_vrt/backstop_ui.json](https://github.com/UN-OCHA/ocha_vrt/blob/main/backstop_ui.json)
+See [tools-vrt/backstop_ui.json](https://github.com/UN-OCHA/tools-vrt/blob/main/backstop_ui.json)
 for default config or to
 add other elements.
 Eg.
@@ -70,7 +70,7 @@ is defined in the json config.
 
 Screenshots of multiple viewports of a list of URLs that require a log in step
 to access. Defaults to HID login.
-See [library/engine_scripts/login.js](https://github.com/UN-OCHA/ocha_vrt/blob/main/library/engine_scripts/login.js)
+See [library/engine_scripts/login.js](https://github.com/UN-OCHA/tools-vrt/blob/main/library/engine_scripts/login.js)
 for default values.
 
 ```
@@ -93,7 +93,7 @@ TEST_PASSWORD=password for test URL
 
 ```
 
-See [ocha_vrt/backstop_auth.json](https://github.com/UN-OCHA/ocha_vrt/blob/main/backstop_auth.json)
+See [tools-vrt/backstop_auth.json](https://github.com/UN-OCHA/tools-vrt/blob/main/backstop_auth.json)
 for default config.
 
 See https://github.com/garris/BackstopJS for config examples.
@@ -107,7 +107,7 @@ REF_URI=full URL for reference files
 TEST_URI=full URL for test files
 ```
 
-See [ocha_vrt/backstop_img.json](https://github.com/UN-OCHA/ocha_vrt/blob/main/backstop_img.json)
+See [tools-vrt/backstop_img.json](https://github.com/UN-OCHA/tools-vrt/blob/main/backstop_img.json)
 for default config. Swap `purpleImages.js` for `catImages.js` in
 `onReadyScript` in the `backstop_img.json` config.
 
@@ -126,7 +126,7 @@ not really matter
 - Run the docker commands with the env variables if relevant (Eg. Authenticated
 user login credentials) to generate the
 reference and test screenshots
-- Visit `ocha_vrt/data/anon/html_report/index.html` for report
+- Visit `tools-vrt/data/anon/html_report/index.html` for report
 
 ## Run tests
 
