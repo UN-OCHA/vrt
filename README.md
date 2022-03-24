@@ -233,7 +233,7 @@ docker run \
 
 ```
 
-### Generate reference screenshots for UI behaviour
+### Generate test screenshots for UI behaviour
 
 ```
 
