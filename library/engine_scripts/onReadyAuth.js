@@ -28,5 +28,6 @@ module.exports = async (page, scenario, vp) => {
   }
 
   await page.goto(scenario.url);
-  await page.waitForTimeout(4000);
+  // Wait for Drupal .user-logged-in class on body.
+  await page.waitForSelector('.user-logged-in')
 };
