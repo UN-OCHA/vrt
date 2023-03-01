@@ -1,6 +1,8 @@
 node_modules
 .DS_Store
-
-data/anon/**
+buildlog.txt
 
 .env
+data/*
+data/anon/**
+!data/.gitkeep

@@ -4,10 +4,12 @@
     "dotenv": "^8.0.0"
   },
   "scripts": {
+    "reference": "backstop reference --configPath=config/test.js",
     "reference-anon": "backstop reference --configPath=test_anonymous.js",
     "reference-auth": "backstop reference --configPath=test_authenticated.js",
     "reference-img": "backstop reference --configPath=test_img.js",
     "reference-ui": "backstop reference --configPath=test_ui.js",
+    "test": "backstop test --configPath=config/test.js",
     "test-anon": "backstop test --configPath=test_anonymous.js",
     "test-auth": "backstop test --configPath=test_authenticated.js",
     "test-img": "backstop test --configPath=test_img.js",

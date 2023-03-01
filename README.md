@@ -8,6 +8,10 @@ after deployment.
 Remember to add the HTTP auth credentials for relevant sites:
 `TEST_URI=https://user:pw@feature.commondesign-unocha-org.ahconu.org`
 
+## Running via updates scripts.
+
+This has been adapted to run using the scripts in https://github.com/UN-OCHA/drupal-updates. Those scripts may need some small tweaks to work with MacOS and Windows.
+
 ## Set up
 
 - An example file for ENV variables `example.env` - Copy and rename to `.env`.

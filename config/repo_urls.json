@@ -1,0 +1,50 @@
+{
+  "assessmentregistry8-site": {
+    "prod_uri": "https://assessments.hpc.tools",
+    "stage_uri": "https://ocha:dev@dev.assessments-hpc-tools.ahconu.org"
+  },
+  "cerf8": {
+    "prod_uri": "https://cerf.un.org",
+    "stage_uri": "https://ocha:dev@dev.cerf-un-org.ahconu.org"
+  },
+  "common-design-site": {
+    "prod_uri": "https://web.brand.unocha.org",
+    "stage_uri": "https://ocha:dev@demo.commondesign-unocha-org.ahconu.org"
+  },
+  "gms-site": {
+    "prod_uri": "https://gms.unocha.org",
+    "stage_uri": "https://ocha:dev@dev.gms-unocha-org.ahconu.org"
+  },
+  "hrinfo-site": {
+    "prod_uri": "https://humanitarianresponse.info/en",
+    "stage_uri": "https://ocha:dev@dev.humanitarianresponse-info.ahconu.org/en"
+  },
+  "iasc8": {
+    "prod_uri": "https://interagencystandingcommittee.org",
+    "stage_uri": "https://ocha:dev@dev.interagencystandingcommittee-org.ahconu.org"
+  },
+  "numbers-site": {
+    "prod_uri": "https://odsg.unocha.org",
+    "stage_uri": "https://ocha:dev@dev.odsg-unocha-org.ahconu.org"
+  },
+  "odsg8-site": {
+    "prod_uri": "https://odsg.unocha.org",
+    "stage_uri": "https://ocha:dev@dev.odsg-unocha-org.ahconu.org"
+  },
+  "response-site": {
+    "prod_uri": "https://response.reliefweb.int",
+    "stage_uri": "https://ocha:dev@dev.response-reliefweb-int.ahconu.org"
+  },
+  "rwint9-site": {
+    "prod_uri": "https://reliefweb.int",
+    "stage_uri": "https://ocha:dev@dev.reliefweb-int.ahconu.org"
+  },
+  "slt8-site": {
+    "prod_uri": "https://savinglivestogether.unocha.org",
+    "stage_uri": "https://ocha:dev@dev.savinglivestogether-unocha-org.ahconu.org"
+  },
+  "unocha-org": {
+    "prod_uri": "https://unocha.org",
+    "stage_uri": "https://ocha:dev@dev.unocha-org.ahconu.org"
+  }
+}
