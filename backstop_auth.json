@@ -26,11 +26,11 @@
     }
   ],
   "paths": {
-    "bitmaps_reference": "data/anon/bitmaps_reference",
-    "bitmaps_test": "data/anon/bitmaps_test",
+    "bitmaps_reference": "data/auth/bitmaps_reference",
+    "bitmaps_test": "data/auth/bitmaps_test",
     "engine_scripts": "library/engine_scripts",
-    "html_report": "data/anon/html_report",
-    "ci_report": "data/anon/ci_report"
+    "html_report": "data/auth/html_report",
+    "ci_report": "data/auth/ci_report"
   },
   "report": ["browser", "CI"],
   "engine": "puppeteer",

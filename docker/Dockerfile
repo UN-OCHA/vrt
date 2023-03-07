@@ -1,4 +1,4 @@
-FROM public.ecr.aws/unocha/debian-snap-base:12-debian
+FROM public.ecr.aws/unocha/debian-snap-base:16-debian
 
 ARG VCS_REF
 ARG VCS_URL
@@ -39,13 +39,14 @@ RUN \
     apt-get -qy install --no-install-recommends bash google-chrome-stable && \
     apt-get -qy install libx11-xcb1 libxtst6 libxss1 libxshmfence1 && \
     apt-get -qy clean && \
-    rm -rf /var/cache/apt/lists/* && \
-    # Create a symlink to the helper scripts.
-    # See https://humanitarian.atlassian.net/browse/OPS-6831
-    ln -s /srv/node_modules/backstopjs/capture/engine_scripts/puppet ./scripts
+    rm -rf /var/cache/apt/lists/*
 
 # Install packages.
 RUN npm install
+
+# Create a symlink to the helper scripts.
+# See https://humanitarian.atlassian.net/browse/OPS-6831
+RUN ln -s /srv/node_modules/backstopjs/capture/engine_scripts/puppet ./scripts
 
 # How is datty formed?
 VOLUME ["/srv/data"]
