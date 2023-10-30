@@ -17,10 +17,11 @@
       "height": 1080
     }
   ],
-  "onReadyScript": "onReadyAuth.js",
+  "onBeforeScript": "onBefore.js",
   "scenarios": [
     {
       "label": "homepage",
+      "cookiePath":"cookies.json",
       "url": "%%URI%%",
       "removeSelectors": ["#admin-menu", "#messages"]
     }
