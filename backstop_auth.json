@@ -21,7 +21,7 @@
   "scenarios": [
     {
       "label": "homepage",
-      "cookiePath":"config/cookies.json",
+      "cookiePath": "config/cookies.json",
       "url": "%%URI%%",
       "removeSelectors": ["#admin-menu", "#messages"]
     }

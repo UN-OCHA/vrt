@@ -18,12 +18,16 @@ else {
 // Base URI.
 require('dotenv').config();
 let baseURI;
+let userId;
 if (process.env.npm_lifecycle_event == 'reference-auth') {
   baseURI = new URL(process.env.REF_URI);
+  userId = process.env.REF_UID || '';
 }
 else {
   baseURI = new URL(process.env.TEST_URI);
+  userId = process.env.TEST_UID || '';
 }
+
 
 // Read first scenario for options.
 let baseScenario = config.scenarios[0];
@@ -34,6 +38,11 @@ config.scenarios = [];
 for (i in urls) {
   let urlString = urls[i];
   if (urlString) {
+
+    if (userId.length > 0) {
+      urlString = urlString.replace('/%%UID%%/', userId);
+    }
+
     let url = new URL(urlString);
     let scenario = Object.assign({}, baseScenario);
 
@@ -52,6 +61,7 @@ for (i in urls) {
     url.password = baseURI.password;
     url.hostname = baseURI.hostname;
     url.port = baseURI.port;
+
 
     scenario.url = url.href;
     scenario.label = label;

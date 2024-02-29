@@ -80,20 +80,10 @@ for default values.
 ```
 
 REF_URI=full URL for reference files
-REF_LOGIN_PAGE=path to login page Eg: '/user/login/hid'
-REF_USERNAME_INPUT=username input selector Eg. '#email'
-REF_PASSWORD_INPUT=password input selector Eg. '#password'
-REF_SUBMIT=submit button selector Eg. '.t-btn--login'
-REF_USERNAME=username for reference URL
-REF_PASSWORD=password for reference URL
+REF_UID=the (Drupal) user ID, which can be substituted in scenario URLs
 
 TEST_URI=full URL for test files
-TEST_LOGIN_PAGE=path to login page Eg: '/user/login/hid'
-TEST_USERNAME_INPUT=username input selector Eg. '#email'
-TEST_PASSWORD_INPUT=password input selector Eg. '#password'
-TEST_SUBMIT=submit button selector Eg. '.t-btn--login'
-TEST_USERNAME=username for test URL
-TEST_PASSWORD=password for test URL
+TEST_UID=the (Drupal) user ID, which can be substituted in scenario URLs
 
 ```
 

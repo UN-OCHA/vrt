@@ -1,1 +1,3 @@
-https://feature.commondesign-unocha-org.ahconu.org/node/1/edit
+https://feature.commondesign-unocha-org.ahconu.org/
+https://feature.commondesign-unocha-org.ahconu.org/user
+https://feature.commondesign-unocha-org.ahconu.org/%%UID%%/edit

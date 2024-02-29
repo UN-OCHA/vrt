@@ -2,14 +2,18 @@ const fs = require("fs");
 
 module.exports = async (page, scenario) => {
   let cookies = [];
-  const cookiePath = scenario.cookiePath;
+  const cookiePath = scenario.cookiePath || 'config/cookies.json';
 
   // READ COOKIES FROM FILE IF EXISTS
   if (fs.existsSync(cookiePath)) {
     cookies = JSON.parse(fs.readFileSync(cookiePath));
+  } else {
+    console.log("Failed to load cookies from: ", cookiePath);
   }
 
   // MUNGE COOKIE DOMAIN
+  // NOPE DO NOT
+  /**
   cookies = cookies.map((cookie) => {
     if (
       cookie.domain.startsWith("http://") ||
@@ -22,6 +26,7 @@ module.exports = async (page, scenario) => {
     delete cookie.domain;
     return cookie;
   });
+  */
 
   // SET COOKIES
   const setCookies = async () => {
