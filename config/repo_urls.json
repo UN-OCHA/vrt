@@ -1,62 +1,56 @@
 {
-  "assessmentregistry8-site": {
-    "local_uri": "https://assessments.test",
-    "prod_uri": "https://assessments.hpc.tools",
-    "stage_uri": "https://ocha:dev@dev.assessments-hpc-tools.ahconu.org"
-  },
   "cerf8": {
-    "local_uri": "https://cerf8.test",
+    "local_uri": "https://cerf-local.test",
     "prod_uri": "https://cerf.un.org",
-    "stage_uri": "https://ocha:dev@dev.cerf-un-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.cerf-un-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.cerf-un-org.ahconu.org"
   },
   "common-design-site": {
-    "local_uri": "https://commondesign.test",
+    "local_uri": "https://commondesign-local.test",
     "prod_uri": "https://web.brand.unocha.org",
-    "stage_uri": "https://ocha:dev@demo.commondesign-unocha-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@demo.commondesign-unocha-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.commondesign-unocha-org.ahconu.org"
   },
   "gms-site": {
-    "local_uri": "https://gms.test",
+    "local_uri": "https://gms-local.test",
     "prod_uri": "https://gms.unocha.org",
-    "stage_uri": "https://ocha:dev@dev.gms-unocha-org.ahconu.org"
-  },
-  "hrinfo-site": {
-    "local_uri": "https://hrinfo.test",
-    "prod_uri": "https://humanitarianresponse.info/en",
-    "stage_uri": "https://ocha:dev@dev.humanitarianresponse-info.ahconu.org/en"
+    "dev_uri": "https://ocha:dev@dev.gms-unocha-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.gms-unocha-org.ahconu.org"
   },
   "iasc8": {
-    "local_uri": "https://iasc.test",
+    "local_uri": "https://iasc-local.test",
     "prod_uri": "https://interagencystandingcommittee.org",
-    "stage_uri": "https://ocha:dev@dev.interagencystandingcommittee-org.ahconu.org"
-  },
-  "numbers-site": {
-    "local_uri": "https://numbers.test",
-    "prod_uri": "https://numbers.reliefweb.int",
-    "stage_uri": "https://ocha:dev@dev.numbers-rwlabs-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.interagencystandingcommittee-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.interagencystandingcommittee-org.ahconu.org"
   },
   "odsg8-site": {
-    "local_uri": "https://odsg.test",
+    "local_uri": "https://odsg-local.test",
     "prod_uri": "https://odsg.unocha.org",
-    "stage_uri": "https://ocha:dev@dev.odsg-unocha-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.odsg-unocha-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.odsg-unocha-org.ahconu.org"
   },
   "response-site": {
-    "local_uri": "https://response.test",
+    "local_uri": "https://response-local.test",
     "prod_uri": "https://response.reliefweb.int",
-    "stage_uri": "https://ocha:dev@dev.response-reliefweb-int.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.response-reliefweb-int.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.response-reliefweb-int.ahconu.org"
   },
   "rwint9-site": {
-    "local_uri": "https://rwint.test",
+    "local_uri": "https://rwint-local.test",
     "prod_uri": "https://reliefweb.int",
-    "stage_uri": "https://ocha:dev@dev.reliefweb-int.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.reliefweb-int.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.reliefweb-int.ahconu.org"
   },
   "slt8-site": {
-    "local_uri": "https://slt.test",
+    "local_uri": "https://slt-local.test",
     "prod_uri": "https://savinglivestogether.unocha.org",
-    "stage_uri": "https://ocha:dev@dev.savinglivestogether-unocha-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.savinglivestogether-unocha-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.savinglivestogether-unocha-org.ahconu.org"
   },
-  "unocha-org": {
-    "local_uri": "https://unochaorg.test",
+  "unocha-site": {
+    "local_uri": "https://unocha-local.test",
     "prod_uri": "https://unocha.org",
-    "stage_uri": "https://ocha:dev@dev.unocha-org.ahconu.org"
+    "dev_uri": "https://ocha:dev@dev.unocha-org.ahconu.org",
+    "stage_uri": "https://ocha:dev@stage.unocha-org.ahconu.org"
   }
 }
