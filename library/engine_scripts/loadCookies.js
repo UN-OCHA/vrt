@@ -2,7 +2,7 @@ const fs = require("fs");
 
 module.exports = async (page, scenario) => {
   let cookies = [];
-  const cookiePath = scenario.cookiePath || 'config/cookies.json';
+  const cookiePath = scenario.cookiePath;
 
   // READ COOKIES FROM FILE IF EXISTS
   if (fs.existsSync(cookiePath)) {
