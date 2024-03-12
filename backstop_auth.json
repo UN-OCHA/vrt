@@ -23,7 +23,7 @@
       "label": "homepage",
       "cookiePath": "config/cookies.json",
       "url": "%%URI%%",
-      "removeSelectors": ["#admin-menu", "#messages"]
+      "removeSelectors": ["#admin-menu", "#messages", "#toolbar-administration"]
     }
   ],
   "paths": {
