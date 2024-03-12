@@ -3,6 +3,4 @@ module.exports = async (page, scenario, vp) => {
   await require('./clickAndHoverHelper')(page, scenario);
 
   // add more ready handlers here...
-
-  await require('./saveCookies')(page, scenario);
 };
