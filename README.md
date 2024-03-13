@@ -72,28 +72,35 @@ is defined in the json config.
 
 ## Testing authenticated pages
 
-Screenshots of multiple viewports of a list of URLs that require a log in step
-to access. Defaults to HID login.
-See [library/engine_scripts/login.js](https://github.com/UN-OCHA/tools-vrt/blob/main/library/engine_scripts/login.js)
-for default values.
+Screenshots of multiple viewports of a list of URLs that require a logged-in user
+to access. This task requires a valid session cookie to be defined in config/cookies.json.
+See [config/cookies.json](https://github.com/UN-OCHA/tools-vrt/blob/main/config/cookies.json)
+for required JSON object properties.
+
+To obtain a session cookie when testing on your local, login to the Drupal site as
+the user you want to use for the VRT comparison using your favourite web browser.
+
+Ensure you have a cookie managemenet extension installed, or use the `Inspect` console
+to look at Network > Headers. Look up the cookie whose name starts with SSESS and then
+contains a long random string. Its value is also a long random string.
+
+Pop the name and value of this cookie in the repsective fields of config/cookies.json and
+ensure that the domain matches the ref or test site hostname.
+
+Make sure you obtain a valid session cookie for the ref and test sites.
+
+You can use the uid for the authenticated user in test URLs, by adding `%%UID%%` in urls_auth.txt.
+
+If you do this, you need to the set REF_UID and TEST_UID environment variables that will
+be passed to the VRT docker container.
+
 
 ```
-
 REF_URI=full URL for reference files
-REF_LOGIN_PAGE=path to login page Eg: '/user/login/hid'
-REF_USERNAME_INPUT=username input selector Eg. '#email'
-REF_PASSWORD_INPUT=password input selector Eg. '#password'
-REF_SUBMIT=submit button selector Eg. '.t-btn--login'
-REF_USERNAME=username for reference URL
-REF_PASSWORD=password for reference URL
+REF_UID=the (Drupal) user ID, which can be substituted in scenario URLs
 
 TEST_URI=full URL for test files
-TEST_LOGIN_PAGE=path to login page Eg: '/user/login/hid'
-TEST_USERNAME_INPUT=username input selector Eg. '#email'
-TEST_PASSWORD_INPUT=password input selector Eg. '#password'
-TEST_SUBMIT=submit button selector Eg. '.t-btn--login'
-TEST_USERNAME=username for test URL
-TEST_PASSWORD=password for test URL
+TEST_UID=the (Drupal) user ID, which can be substituted in scenario URLs
 
 ```
 
@@ -183,8 +190,7 @@ docker run \
    --name reference \
    --entrypoint npm \
    -e REF_URI=${REF_URI} \
-   -e REF_USERNAME=${REF_USERNAME} \
-   -e REF_PASSWORD=${REF_PASSWORD} \
+   -e REF_UID=${REF_UID} \
    -v "$(pwd)/data:/srv/data" \
    -v "$(pwd)/config:/srv/config" \
    -v "$(pwd)/backstop_auth.json:/srv/backstop_auth.json" \
@@ -205,8 +211,7 @@ docker run \
    --name test \
    --entrypoint npm \
    -e TEST_URI=${TEST_URI} \
-   -e TEST_USERNAME=${TEST_USERNAME} \
-   -e TEST_PASSWORD=${TEST_PASSWORD} \
+   -e TEST_UID=${TEST_UID} \
    -v "$(pwd)/data:/srv/data" \
    -v "$(pwd)/config:/srv/config" \
    -v "$(pwd)/backstop_auth.json:/srv/backstop_auth.json" \
