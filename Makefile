@@ -5,8 +5,8 @@ DOCKER_BUILDKIT=1
 ORGANISATION=public.ecr.aws/unocha
 IMAGE=vrt
 VERSION=develop
-EXTRAVERSION=-debian-20-chromium
-MANIFEST_VERSION=debian-20-chromium-dev
+EXTRAVERSION=-202403-01-debian-20-chromium-120
+MANIFEST_VERSION=develop
 
 # The main build recipe.
 build:  clean
@@ -24,7 +24,7 @@ build:  clean
 		. --file docker/Dockerfile \
 		2>&1 | tee buildlog.txt
 
-buildx:	clean
+buildx:	clean login
 	$(DOCKER) buildx build \
 				--no-cache \
 				--build-arg BRANCH_ENVIRONMENT=$(NODE_ENV) \
